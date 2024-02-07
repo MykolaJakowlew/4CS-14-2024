@@ -1,0 +1,37 @@
+[
+  {
+    "from": "address - 1",
+    "to": "address - 2",
+    "login": "l1"
+  },
+  {
+    "from": "address - 3",
+    "to": "address - 4",
+    "login": "l1"
+  },
+  {
+    "from": "address - 1",
+    "to": "address - 2",
+    "login": "l1"
+  },
+  {
+    "from": "address - 3",
+    "to": "address - 4",
+    "login": "l1"
+  },
+  {
+    "from": "address - 1",
+    "to": "address - 2",
+    "login": "l1"
+  },
+  {
+    "from": "address - 3",
+    "to": "address - 4",
+    "login": "l1"
+  },
+  {
+    "from": "address - 3",
+    "to": "address - 4",
+    "login": "l2"
+  }
+]

@@ -1,7 +1,7 @@
 {
 	"info": {
-		"_postman_id": "b73e12d1-40f7-4d5a-95ab-d9c8505439a5",
-		"name": "Pract-1_",
+		"_postman_id": "484164b4-d2df-4c57-b521-a93dd1c26e16",
+		"name": "Pract-1__",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "4087731"
 	},
@@ -13,32 +13,13 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"firstName\": \"firstName-1\",\r\n    \"lastName\": \"lastName-1\",\r\n    \"login\":\"login-1\",\r\n    \"password\": \"password-1\"\r\n}",
+					"raw": "{\r\n    \"firstName\": \"f1\",\r\n    \"lastName\": \"l1\",\r\n    \"login\": \"l2\",\r\n    \"password\": \"p1\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
 						}
 					}
 				},
-				"url": {
-					"raw": "http://localhost:8080/users",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"users"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Get all users",
-			"request": {
-				"method": "GET",
-				"header": [],
 				"url": {
 					"raw": "http://localhost:8080/users",
 					"protocol": "http",
@@ -60,7 +41,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"login\": \"login-1\",\r\n    \"password\": \"password-1\"\r\n}",
+					"raw": "{\r\n    \"login\": \"l2\",\r\n    \"password\": \"p1\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -82,19 +63,44 @@
 			"response": []
 		},
 		{
+			"name": "Get users",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "super_admin_password444",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "Create order",
 			"request": {
 				"method": "POST",
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "cbe1fed7-c93c-4dac-a7b2-536b2924f3c0",
+						"value": "5902dc75-615c-49d0-87e9-b69be69cc714",
 						"type": "text"
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"from\": \"address - 1\",\r\n    \"to\": \"address - 2\"\r\n}",
+					"raw": "{\r\n    \"from\": \"address - 3\",\r\n    \"to\": \"address - 4\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -110,51 +116,6 @@
 					"port": "8080",
 					"path": [
 						"orders"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Get orders by user",
-			"request": {
-				"method": "GET",
-				"header": [
-					{
-						"key": "Authorization",
-						"value": "a89e42d8-972a-4590-aa40-be8e873d3713",
-						"type": "text"
-					}
-				],
-				"url": {
-					"raw": "http://localhost:8080/orders",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"orders"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Get last 5 from point",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:8080/orders/from",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"orders",
-						"from"
 					]
 				}
 			},
